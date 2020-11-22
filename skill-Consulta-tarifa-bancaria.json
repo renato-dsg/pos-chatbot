@@ -1,0 +1,1126 @@
+{
+  "intents": [
+    {
+      "intent": "banco",
+      "examples": [
+        {
+          "text": "banco do brasil"
+        },
+        {
+          "text": "bb"
+        },
+        {
+          "text": "bradesco"
+        },
+        {
+          "text": "caixa"
+        },
+        {
+          "text": "caixa economica federal"
+        },
+        {
+          "text": "cef"
+        },
+        {
+          "text": "itau"
+        },
+        {
+          "text": "itaú"
+        },
+        {
+          "text": "quero saber o valor das tarifas do banco do brasil"
+        },
+        {
+          "text": "santander"
+        }
+      ],
+      "description": "perguntar de qual instituição deseja saber o valor das tarifas "
+    },
+    {
+      "intent": "cancelar",
+      "examples": [
+        {
+          "text": "abortar"
+        },
+        {
+          "text": "Cancelando consulta ..."
+        },
+        {
+          "text": "cancelar"
+        },
+        {
+          "text": "cancelar consulta"
+        },
+        {
+          "text": "parar"
+        },
+        {
+          "text": "parar a consulta"
+        },
+        {
+          "text": "quero cancelar"
+        },
+        {
+          "text": "sair"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "finalizacao",
+      "examples": [
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "até logo"
+        },
+        {
+          "text": "Finalizar a consulta"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "Obrigado. Até logo"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "ok .. obrigado"
+        },
+        {
+          "text": "ótimo"
+        },
+        {
+          "text": "Tchau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "informar_banco",
+      "examples": [
+        {
+          "text": "informar banco"
+        },
+        {
+          "text": "valor tarifa"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "listar_bancos",
+      "examples": [
+        {
+          "text": "lista de bancos"
+        },
+        {
+          "text": "listar bancos"
+        },
+        {
+          "text": "vários bancos"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "nao_prosseguir",
+      "examples": [
+        {
+          "text": "Ok. Nos chame se quiser realizar esta consulta."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "prosseguir",
+      "examples": [
+        {
+          "text": "Muito bem, iremos prosseguir."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "ola"
+        }
+      ],
+      "description": "saudação"
+    },
+    {
+      "intent": "tipo_tarifa_manutencao_conta",
+      "examples": [
+        {
+          "text": "Manutenção de conta"
+        },
+        {
+          "text": "manutenção de conta ativa"
+        },
+        {
+          "text": "preço para manter uma conta"
+        },
+        {
+          "text": "quanto custa manter uma conta"
+        },
+        {
+          "text": "valor para manter uma conta"
+        }
+      ],
+      "description": "Manutenção de conta"
+    },
+    {
+      "intent": "um_banco",
+      "examples": [
+        {
+          "text": "Certo ... informe o nome do Banco que deseja consultar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "valor_tarifas",
+      "examples": [
+        {
+          "text": "Desejo realizar nova consulta de tarifa"
+        },
+        {
+          "text": "gostaria de saber valor das tarifas"
+        },
+        {
+          "text": "nova consulta de tarifa"
+        },
+        {
+          "text": "pesquisar tarifas"
+        },
+        {
+          "text": "qual o preço das tarifas"
+        },
+        {
+          "text": "quanto pago de tarifa"
+        },
+        {
+          "text": "valor das tarifas"
+        }
+      ],
+      "description": "valor das tarifas"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "banco",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Banco do Brasil",
+          "synonyms": [
+            "00000000",
+            "bb"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bradesco",
+          "synonyms": [
+            "60746948",
+            "bradesco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Caixa",
+          "synonyms": [
+            "00360305",
+            "caixa econômica federal",
+            "cef"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Itau",
+          "synonyms": [
+            "60701190",
+            "itau"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Santander",
+          "synonyms": [
+            "90400888",
+            "santander"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nao_prosseguir",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ok. Nos chame se quiser realizar esta consulta.",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "prosseguir",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Muito bem, iremos prosseguir.",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "servico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "abertura de crédito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cartão",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pacote de serviços",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "servico",
+          "synonyms": [
+            "produto"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/gezielmc%40gmail.com_dev/default/consulta_tarifas.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_9_1605526725295",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Escolha o produto ou serviço que deseja consultar a tarifa no banco @banco",
+            "options": [
+              {
+                "label": "Manutenção de Conta Ativa",
+                "value": {
+                  "input": {
+                    "text": "Manutenção de Conta Ativa"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1605835208166",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1605835208167",
+      "previous_sibling": "handler_1_1605835208167"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1605835208166",
+      "context": {
+        "servico": "@servico"
+      },
+      "conditions": "@servico",
+      "event_name": "input",
+      "dialog_node": "handler_1_1605835208167"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe o nome do banco que deseja consultar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1605834824131",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1605834824153",
+      "previous_sibling": "handler_5_1605834824153"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok ... cancelando"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_9_1605834776013",
+      "context": {
+        "cancelar": true
+      },
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#cancelar",
+      "event_name": "generic",
+      "dialog_node": "handler_4_1605835113937"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1605834824131",
+      "context": {
+        "banco": "@banco"
+      },
+      "conditions": "@banco",
+      "event_name": "input",
+      "dialog_node": "handler_5_1605834824153"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_9_1605834776013",
+      "context": {
+        "servico": "Manutenção de Conta Ativa"
+      },
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#tipo_tarifa_manutencao_conta",
+      "event_name": "generic",
+      "dialog_node": "handler_6_1605836271475",
+      "previous_sibling": "handler_4_1605835113937"
+    },
+    {
+      "type": "standard",
+      "title": "Finalizacao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Obrigado pelo contato."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "nome": null,
+        "banco": null,
+        "servico": null,
+        "webhook_result_1": null
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#finalizacao",
+      "dialog_node": "node_2_1605055975228",
+      "previous_sibling": "node_5_1605840487369"
+    },
+    {
+      "type": "standard",
+      "title": "valida_tipo_tarifa",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#tipo_tarifa_manutencao_conta",
+      "dialog_node": "node_2_1605501897125",
+      "previous_sibling": "node_4_1605502528699"
+    },
+    {
+      "type": "standard",
+      "title": "Saudacao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "olá ... Como esta?"
+              },
+              {
+                "text": "oi ... tudo bem? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Irei te ajudar a pesquisar tarifas de produtos e serviços das instituições financeiras.\n"
+              },
+              {
+                "text": "Desta forma você saberá qual instituição oferece o melhor preço para o serviço que você procura."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Podemos prosseguir?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "Muito bem, iremos prosseguir."
+                  }
+                }
+              },
+              {
+                "label": "Não ... cancelar",
+                "value": {
+                  "input": {
+                    "text": "Ok. Nos chame se quiser realizar esta consulta."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_4_1605055970372",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "prosseguir",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1605501897125"
+      },
+      "conditions": "#prosseguir",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1605502528699",
+      "previous_sibling": "node_9_1605834776013"
+    },
+    {
+      "type": "standard",
+      "title": "nova_consulta",
+      "output": {
+        "generic": [
+          {
+            "title": "Deseja realizar nova consulta?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "Desejo realizar nova consulta de tarifa"
+                  }
+                }
+              },
+              {
+                "label": "Não",
+                "value": {
+                  "input": {
+                    "text": "Finalizar a consulta"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "dialog_node": "node_5_1605840487369",
+      "previous_sibling": "node_6_1605492940905"
+    },
+    {
+      "type": "standard",
+      "title": "um_banco",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#um_banco",
+      "dialog_node": "node_6_1605492940905",
+      "previous_sibling": "node_8_1605237475297"
+    },
+    {
+      "type": "standard",
+      "title": "tipo_de_tarifa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você quer o valor da tarifa para uma instituição específica ou deseja que eu te informe o valor de algumas instituições?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "O que deseja?",
+            "options": [
+              {
+                "label": "Informar um Banco",
+                "value": {
+                  "input": {
+                    "text": "Certo ... informe o nome do Banco que deseja consultar"
+                  }
+                }
+              },
+              {
+                "label": "Listar vários Bancos",
+                "value": {
+                  "input": {
+                    "text": "Iremos listar o valor da tarifa de alguns bancos"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "servico": "Manutenção de Conta Ativa"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#tipo_tarifa_manutencao_conta",
+      "dialog_node": "node_8_1605237475297",
+      "previous_sibling": "node_2_1605501897125"
+    },
+    {
+      "type": "standard",
+      "title": "Cancelamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Consulta cancelada."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "nome": null,
+        "banco": null,
+        "servico": null,
+        "prosseguir": null,
+        "tipo_tarifa": null,
+        "nao_prosseguir": null,
+        "webhook_result_1": null
+      },
+      "conditions": "#cancelar || #nao_prosseguir",
+      "dialog_node": "node_9_1605526725295",
+      "previous_sibling": "node_2_1605055975228"
+    },
+    {
+      "type": "frame",
+      "title": "consulta_tarifa",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "nome": "$banco"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1605840487369"
+      },
+      "conditions": "#prosseguir || #banco || #tipo_tarifa_manutencao_conta || #valor_tarifas",
+      "dialog_node": "node_9_1605834776013",
+      "previous_sibling": "node_4_1605055970372"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_4_1605502528699",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1605504467099",
+      "previous_sibling": "response_7_1605505252725"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Escolha o produto ou serviço que deseja consultar a tarifa",
+            "options": [
+              {
+                "label": "Manutenção de Conta Ativa",
+                "value": {
+                  "input": {
+                    "text": "Manutenção de Conta Ativa"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1605502528699",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1605237475297"
+      },
+      "conditions": "#prosseguir",
+      "dialog_node": "response_1_1605502608369"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Desculpe mas no momento consultamos os valores apenas de Manutenção de Conta ... podemos prosseguir com a consulta?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "Muito bem, iremos prosseguir."
+                  }
+                }
+              },
+              {
+                "label": "Não ... Cancelar",
+                "value": {
+                  "input": {
+                    "text": "Ok. Nos chame se quiser realizar esta consulta."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1605501897125",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1605526725295"
+      },
+      "conditions": "#cancelar",
+      "dialog_node": "response_2_1605502048733",
+      "previous_sibling": "response_6_1605501963794"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você quer o valor da tarifa para uma instituição específica ou deseja que eu te informe o valor de algumas instituições?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "O que deseja?",
+            "options": [
+              {
+                "label": "Informar um Banco",
+                "value": {
+                  "input": {
+                    "text": "Certo ... informe o nome do Banco que deseja consultar"
+                  }
+                }
+              },
+              {
+                "label": "Listar vários Bancos",
+                "value": {
+                  "input": {
+                    "text": "Iremos listar o valor da tarifa de alguns bancos"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1605237475297",
+      "context": {},
+      "disabled": true,
+      "dialog_node": "response_4_1605239345356"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "No momento podemos consultar apenas o valor da Tarifa de Manutenção de Conta Ativa, deseja realizar esta consulta?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "Muito bem, iremos prosseguir."
+                  }
+                }
+              },
+              {
+                "label": "Não. Cancelar consulta.",
+                "value": {
+                  "input": {
+                    "text": "Ok. Nos chame se quiser realizar esta consulta."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1605501897125",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1605502528699"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1605573423180",
+      "previous_sibling": "response_2_1605502048733"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1605501897125",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1605237475297"
+      },
+      "conditions": "#tipo_tarifa_manutencao_conta",
+      "dialog_node": "response_6_1605501963794"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os valores da Tarifa de Manutenção de Conta Ativa no banco <? $webhook_result_1.tarifas[0][0] ?> são os seguintes: "
+              },
+              {
+                "text": "<? $webhook_result_1.tarifas[1][0] ?>  _______ R$  <? $webhook_result_1.tarifas[2][0] ?>"
+              },
+              {
+                "text": "<? $webhook_result_1.tarifas[1][1] ?> ______ R$  <? $webhook_result_1.tarifas[2][1] ?>"
+              },
+              {
+                "text": "<? $webhook_result_1.tarifas[1][2] ?> ______ R$  <? $webhook_result_1.tarifas[2][2] ?>"
+              },
+              {
+                "text": "<? $webhook_result_1.tarifas[1][3] ?> ______ R$  <? $webhook_result_1.tarifas[2][3] ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_9_1605834776013",
+      "context": {
+        "nome": null,
+        "banco": null,
+        "servico": null
+      },
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_6_1605834823455",
+      "previous_sibling": "response_7_1605835293352"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1605502528699",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1605526725295"
+      },
+      "conditions": "@nao_prosseguir",
+      "dialog_node": "response_7_1605505252725",
+      "previous_sibling": "response_1_1605502608369"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não foi possível consultar este Banco ... Favor entrar em contato diretamente com a instituição. "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1605834776013",
+      "context": {
+        "nome": null,
+        "banco": null,
+        "servico": null,
+        "webhook_result_1": null
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1605834826889",
+      "previous_sibling": "response_6_1605834823455"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Consulta cancelada"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1605834776013",
+      "context": {
+        "nome": null,
+        "banco": null,
+        "servico": null
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1605055975228"
+      },
+      "conditions": "$cancelar",
+      "dialog_node": "response_7_1605835293352",
+      "previous_sibling": "handler_6_1605836271475"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1605834776013",
+      "variable": "$banco",
+      "dialog_node": "slot_1_1605834824131",
+      "previous_sibling": "response_7_1605834826889"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1605834776013",
+      "variable": "$servico",
+      "dialog_node": "slot_3_1605835208166",
+      "previous_sibling": "slot_1_1605834824131"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Consulta-tarifa-bancaria",
+  "language": "pt-br",
+  "description": "skill de consulta de tarifas bancarias"
+}
